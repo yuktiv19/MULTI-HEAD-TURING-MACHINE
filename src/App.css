@@ -1,0 +1,91 @@
+/* App layout styles */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-content {
+  flex: 1;
+  padding: var(--space-xl);
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+/* Main two-column layout:
+   Left  = Config + Transitions (stacked)
+   Right = Controls + State Diagram + Step Log (stacked) */
+.app-main-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+.app-left-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.app-right-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+/* Simulation area (tape + status) — rendered at the top */
+.app-simulation-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+.app-simulation-left {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.app-simulation-right {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+/* Footer */
+.app-footer {
+  text-align: center;
+  padding: var(--space-lg);
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.app-footer a {
+  color: var(--accent-light);
+  text-decoration: none;
+}
+
+.app-footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .app-main-row,
+  .app-simulation-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .app-content {
+    padding: var(--space-md);
+    gap: var(--space-md);
+  }
+}

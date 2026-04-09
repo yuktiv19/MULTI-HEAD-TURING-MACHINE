@@ -1,0 +1,75 @@
+/* StepLog styles */
+.step-log {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.step-log-scroll {
+  max-height: 260px;
+  overflow-y: auto;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+}
+
+.step-log-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.78rem;
+}
+
+.step-log-table th {
+  position: sticky;
+  top: 0;
+  background: var(--bg-surface);
+  padding: 8px 12px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-color);
+  z-index: 1;
+}
+
+.step-log-table td {
+  padding: 6px 12px;
+  border-bottom: 1px solid var(--border-subtle);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-primary);
+}
+
+.step-log-table tr:hover td {
+  background: var(--accent-bg);
+}
+
+.step-log-table tr.current td {
+  background: var(--accent-bg);
+  border-left: 3px solid var(--accent);
+}
+
+.step-log-table .state-cell.accepted {
+  color: var(--success);
+  font-weight: 600;
+}
+
+.step-log-table .state-cell.rejected {
+  color: var(--danger);
+  font-weight: 600;
+}
+
+.step-log-empty {
+  text-align: center;
+  padding: var(--space-lg);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.step-log-tape-content {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

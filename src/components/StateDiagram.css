@@ -1,0 +1,50 @@
+/* StateDiagram styles */
+.state-diagram {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  min-height: 300px;
+}
+
+.state-diagram svg {
+  width: 100%;
+  height: 350px;
+  border-radius: var(--radius-md);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+}
+
+/* D3 node styling */
+.state-diagram .node circle {
+  stroke-width: 2px;
+  transition: all var(--transition-base);
+}
+
+.state-diagram .node text {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.state-diagram .link {
+  fill: none;
+  stroke-width: 1.5px;
+}
+
+.state-diagram .link-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+}
+
+.state-diagram .arrow-marker {
+  fill: var(--text-secondary);
+}
+
+.state-diagram-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
