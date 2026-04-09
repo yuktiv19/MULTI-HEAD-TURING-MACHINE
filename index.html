@@ -2,17 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Interactive Multi-Tape and Multi-Head Turing Machine Visualizer with step-by-step animation, state diagrams, and academic demonstrations." />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Multi-Tape / Multi-Head Turing Machine Visualizer</title>
-
-    <!-- Google Fonts: Inter + JetBrains Mono -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    
   </head>
   <body>
     <div id="root"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:false, theme:'dark'});</script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
