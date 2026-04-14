@@ -13,6 +13,10 @@ An interactive, browser-based Turing Machine visualizer built with **React**, **
 - **Step-by-Step Execution**: Run the simulation automatically with adjustable speed, or advance frame-by-frame and even step backwards using the execution history.
 - **Dynamic Tape Expansion**: The tape dynamically grows and visualizes blank (`_`) cells seamlessly as heads move.
 
+## Demo
+
+- **Live demo:** https://multihead-or-multitape-turing-machi.vercel.app/
+
 ## Quick Start
 
 ### Prerequisites
